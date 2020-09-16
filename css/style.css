@@ -6,6 +6,7 @@
     --pure:#FFFFFF;
     --ternary:#898989;
     --light:#F2F2F2;
+    
  }
 
  *{
@@ -21,7 +22,7 @@
 
  header{
      background-color: var(--dark);
-     clip-path: polygon(0 0, 100% 0, 100% 100%,  70% 87%,  0 100%);
+     
      
  }
 
@@ -50,9 +51,6 @@
      padding: 2rem 0;
  }
 
- header nav .branding{
-     margin-right: 3rem;
- }
 
  .hero{
      padding: 3rem 0;
@@ -60,6 +58,7 @@
 
 .hero .left img{
     width: 400px;
+    border-radius: 10%;
 }
 
 .hero .right{
@@ -89,4 +88,52 @@
 
 .hero .right{
     margin-top: -7rem;
+}
+
+section{
+    padding: 6rem 0;
+}
+
+section.about .about-me-img{
+    height: 450px;
+    border-radius: 50%;
+}
+
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+section.about h1 span{
+    color: var(--primary);
+}
+
+section.about h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+section.about p{
+    color: var(--ternary);
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+
+section.about .social{
+    display: flex;
+}
+
+section.about .social img{
+    height: 30px;
+   
+}
+
+section.about .social a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
 }
