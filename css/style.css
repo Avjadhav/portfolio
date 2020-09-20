@@ -478,7 +478,7 @@ footer .copyright{
 
 }
 
-@media screen and (max-width:576px){
+@media(max-width:576px){
     .hero{
         flex-direction: column;
     }
