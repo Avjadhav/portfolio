@@ -447,7 +447,7 @@ footer .copyright{
 }
 
 
-@media(max-width:1024px){
+@media screen and (max-width:1024px){
     header #main-nav{
         display: none;
     }
@@ -478,7 +478,7 @@ footer .copyright{
 
 }
 
-@media(max-width:576px){
+@media screen and (max-width:576px){
     .hero{
         flex-direction: column;
     }
@@ -532,4 +532,64 @@ footer .copyright{
         height: 30px;
     }
     
+}
+
+
+
+
+@media screen and (max-width: 400px){
+
+    .hero{
+        flex-direction: column;
+    }
+    header{
+        clip-path: polygon(0 0,100% 0,100% 100%,69% 95%,0 100%);
+    }
+    .hero .right{
+        position: absolute;
+        top: 350px;
+        padding:0 1rem;
+        background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9));
+    }
+    .hero .left{
+        margin-top: -5rem;
+        margin-right: -8rem;
+        padding-bottom: 3rem;
+    }
+    .about-inner-wrap{
+        flex-direction: column;
+    }
+    .about .right{
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .about .right .social{
+        justify-content: center;
+    }
+    section{
+        padding: 4rem 0;
+    }
+    section.services .card-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    section.work .card-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    section.freelancer h1{
+        line-height: 1.2;
+    }
+    section.freelancer{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 90%,0 100%);
+        padding-bottom: 8rem;
+    }
+    section.contact .card-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    section.contact .input-wrap{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    footer .footer-social img {
+        height: 30px;
+    }
+
 }
